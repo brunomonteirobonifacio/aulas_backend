@@ -7,7 +7,7 @@ public class GradeBookTest {
         try (Scanner scanner = new Scanner(System.in)) {
             GradeBook gradeBook = new GradeBook();
 
-            System.out.print("Digite o nome do curso");
+            System.out.print("Digite o nome do curso: ");
             String courseName = scanner.nextLine();
             gradeBook.showMessage(courseName);
         }
