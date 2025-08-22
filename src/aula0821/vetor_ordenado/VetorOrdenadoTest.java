@@ -1,0 +1,46 @@
+package aula0821.vetor_ordenado;
+
+public class VetorOrdenadoTest {
+    public static void main(String[] args) {
+        VetorOrdenado vetorOrdenado = new VetorOrdenado(5);
+
+        testInserir(vetorOrdenado);
+        System.out.println();
+        testPesquisaLinear(vetorOrdenado);
+        System.out.println();
+        testPesquisaBinaria(vetorOrdenado);
+        System.out.println();
+    }
+
+    public static void testInserir(VetorOrdenado vetorOrdenado) {
+        vetorOrdenado.inserir(2);
+        vetorOrdenado.imprimir();
+
+        System.out.println();
+
+        vetorOrdenado.inserir(7);
+        vetorOrdenado.imprimir();
+
+        System.out.println();
+
+        vetorOrdenado.inserir(-512);
+        vetorOrdenado.imprimir();
+
+        System.out.println();
+
+        vetorOrdenado.inserir(749);
+        vetorOrdenado.imprimir();
+    }
+
+    public static void testPesquisaLinear(VetorOrdenado vetorOrdenado) {
+        System.out.println("Teste pesquisa linear para o valor 2: " + vetorOrdenado.pesquisaLinear(2));
+        System.out.println("Teste pesquisa linear para o valor 7: " + vetorOrdenado.pesquisaLinear(7));
+        System.out.println("Teste pesquisa linear para o valor 0: " + vetorOrdenado.pesquisaLinear(0));
+    }
+
+    public static void testPesquisaBinaria(VetorOrdenado vetorOrdenado) {
+        System.out.println("Teste pesquisa binária para o valor 2: " + vetorOrdenado.pesquisaBinaria(2));
+        System.out.println("Teste pesquisa binária para o valor 7: " + vetorOrdenado.pesquisaBinaria(7));
+        System.out.println("Teste pesquisa binária para o valor 0: " + vetorOrdenado.pesquisaBinaria(0));
+    }
+}
