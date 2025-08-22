@@ -95,6 +95,8 @@ public class VetorOrdenado {
             valores[i] = valores[i + 1];
         }
 
+        ultimaPosicao--;
+
         return true;
     }
 
