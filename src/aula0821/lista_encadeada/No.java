@@ -19,4 +19,8 @@ public class No<T> {
     public void setProximo(No<T> proximo) {
         this.proximo = proximo;
     }
+
+    public boolean isTemProximo() {
+        return proximo != null;
+    }
 }
