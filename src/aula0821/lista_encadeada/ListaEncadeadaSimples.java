@@ -1,10 +1,10 @@
 package aula0821.lista_encadeada;
 
-public class ListaEncadeadaSimples {
-    private No primeiro;
+public class ListaEncadeadaSimples<T> {
+    private No<T> primeiro;
 
-    public void inserirInicio(int valor) {
-        No novo = new No(valor);
+    public void inserirInicio(T valor) {
+        No<T> novo = new No<>(valor);
         novo.setProximo(primeiro);
         primeiro = novo;
     }
@@ -15,7 +15,7 @@ public class ListaEncadeadaSimples {
             return;
         }
 
-        No atual = primeiro;
+        No<T> atual = primeiro;
         while (atual != null) {
             System.out.println(atual.getValor());
             atual = atual.getProximo();

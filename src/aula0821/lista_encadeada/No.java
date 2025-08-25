@@ -1,22 +1,22 @@
 package aula0821.lista_encadeada;
 
-public class No {
-    private int valor;
-    private No proximo;
+public class No<T> {
+    private final T valor;
+    private No<T> proximo;
 
-    public No(int valor) {
+    public No(T valor) {
         this.valor = valor;
     }
 
-    public int getValor() {
+    public T getValor() {
         return valor;
     }
 
-    public No getProximo() {
+    public No<T> getProximo() {
         return proximo;
     }
 
-    public void setProximo(No proximo) {
+    public void setProximo(No<T> proximo) {
         this.proximo = proximo;
     }
 }
