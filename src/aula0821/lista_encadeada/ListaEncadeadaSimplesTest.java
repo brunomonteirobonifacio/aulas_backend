@@ -6,6 +6,8 @@ public class ListaEncadeadaSimplesTest {
 
         testInserirInicio(listaEncadeadaSimples);
         System.out.println();
+        testPesquisa(listaEncadeadaSimples);
+        System.out.println();
         testExcluirInicio(listaEncadeadaSimples);
         System.out.println();
         testExcluirPosicao(listaEncadeadaSimples);
@@ -20,6 +22,19 @@ public class ListaEncadeadaSimplesTest {
         listaEncadeadaSimples.inserirInicio("M");
         listaEncadeadaSimples.inserirInicio("B");
         listaEncadeadaSimples.mostrar();
+    }
+
+    public static void testPesquisa(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+        testPesquisaWithValor(listaEncadeadaSimples, "B");
+        testPesquisaWithValor(listaEncadeadaSimples, "r");
+        testPesquisaWithValor(listaEncadeadaSimples, "B");
+        testPesquisaWithValor(listaEncadeadaSimples, "a");
+    }
+
+    private static <T> void testPesquisaWithValor(ListaEncadeadaSimples<T> listaEncadeadaSimples, T valor) {
+        No<T> noEncontrado = listaEncadeadaSimples.pesquisa(valor);
+        System.out.printf("No encontrado para pesquisa de '%s': %s (%s)\n"
+                .formatted(valor, noEncontrado != null ? noEncontrado : "Não encontrado", noEncontrado != null ? noEncontrado.getValor() : null));
     }
 
     public static void testExcluirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
