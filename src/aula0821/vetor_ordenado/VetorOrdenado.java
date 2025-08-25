@@ -1,13 +1,13 @@
 package aula0821.vetor_ordenado;
 
-public class VetorOrdenado {
+public class VetorOrdenado<T extends Comparable<T>> {
     private int capacidade;
     private int ultimaPosicao = -1;
-    private int[] valores;
+    private T[] valores;
 
     public VetorOrdenado(int capacidade) {
         this.capacidade = capacidade;
-        this.valores = new int[capacidade];
+        this.valores = (T[]) new Comparable[capacidade];
     }
 
     public void imprimir() {
@@ -21,7 +21,7 @@ public class VetorOrdenado {
         }
     }
 
-    public void inserir(int valor) {
+    public void inserir(T valor) {
         if (isCheio()) {
             System.out.println("Capacidade máxima atingida");
             return;
@@ -29,7 +29,7 @@ public class VetorOrdenado {
 
         int posicao = 0;
         for (int i = 0; i <= ultimaPosicao; i++) {
-            if (valores[i] > valor) {
+            if (valores[i].compareTo(valor) > 0) {
                 break;
             }
 
@@ -48,13 +48,13 @@ public class VetorOrdenado {
         ultimaPosicao++;
     }
 
-    public int pesquisaLinear(int valor) {
+    public int pesquisaLinear(T valor) {
         for (int i = 0; i <= ultimaPosicao; i++) {
-            if (valores[i] > valor) {
+            if (valores[i].compareTo(valor) > 0) {
                 return -1;
             }
 
-            if (valores[i] == valor) {
+            if (valores[i].compareTo(valor) == 0) {
                 return i;
             }
         }
@@ -62,14 +62,14 @@ public class VetorOrdenado {
         return -1;
     }
 
-    public int pesquisaBinaria(int valor) {
+    public int pesquisaBinaria(T valor) {
         int limiteInferior = 0;
         int limiteSuperior = ultimaPosicao;
 
         while (true) {
             int posicaoAtual = (limiteInferior + limiteSuperior) / 2;
 
-            if (valores[posicaoAtual] == valor) {
+            if (valores[posicaoAtual].compareTo(valor) == 0) {
                 return posicaoAtual;
             }
 
@@ -77,7 +77,7 @@ public class VetorOrdenado {
                 return -1;
             }
 
-            if (valores[posicaoAtual] < valor) {
+            if (valores[posicaoAtual].compareTo(valor) < 0) {
                 limiteInferior = posicaoAtual + 1;
             } else {
                 limiteSuperior = posicaoAtual - 1;
@@ -85,7 +85,7 @@ public class VetorOrdenado {
         }
     }
 
-    public boolean excluir(int valor) {
+    public boolean excluir(T valor) {
         int posicao = pesquisaLinear(valor);
         if (posicao == -1) {
             return false;
