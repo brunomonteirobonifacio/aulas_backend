@@ -7,6 +7,7 @@ public class Main {
         carro.abrirPortas();
 
         Moto moto = new Moto("Não sei modelo de moto", 2005, false);
+        moto.ligar();
         moto.empinar();
     }
 }
