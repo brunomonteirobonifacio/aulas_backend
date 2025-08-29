@@ -9,12 +9,12 @@ public class Carro {
         this.motor = motor;
     }
 
-    public void ligarCarro() {
+    public void ligar() {
         System.out.println("Ligando carro...");
         motor.ligar();
     }
 
-    public void desligarCarro() {
+    public void desligar() {
         System.out.println("Desligando carro...");
         motor.desligar();
     }
