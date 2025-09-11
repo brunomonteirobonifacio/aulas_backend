@@ -1,13 +1,13 @@
-package menu.aula0828.polimorfismo;
+package menu.aula0828.composicao;
 
-import aulas.aula0828.polimorfismo.FormaTest;
+import aulas.aula0828.composicao.pratica02.CarroTest;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 
-public class ExercicioFormasItemAction implements MenuItemAction {
+public class Pratica02ComposicaoItemAction implements MenuItemAction {
 
     @Override
     public void execute(MenuEngine menuEngine) {
-        FormaTest.main(null);
+        CarroTest.main(null);
     }
 }

@@ -15,8 +15,8 @@ public class ComposicaoMenu extends AbstractMenuBr {
     @Override
     protected List<MenuItem> loadMenuItems() {
         return List.of(
-                new MenuItem("1", "Exercício com Carro e Motor", new ExercicioCarroMotorItemAction()),
-                new MenuItem("2", "Pratica 02", new Pratica02ItemAction())
+                new MenuItem("1", "Exercício com Carro e Motor", new ExercicioCarroPolimorfismoItemAction()),
+                new MenuItem("2", "Pratica 02", new Pratica02ComposicaoItemAction())
         );
     }
 }

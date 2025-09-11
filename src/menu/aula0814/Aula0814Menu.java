@@ -18,8 +18,8 @@ public class Aula0814Menu extends AbstractMenuBr {
                 new MenuItem("1", "Getters e Setters", new GettersSettersItemAction()),
                 new MenuItem("2", "Gradebook", new GradebookItemAction()),
                 new MenuItem("3", "Sobrecarga de Construtor", new SobrecargaConstrutorItemAction()),
-                new MenuItem("4", "Pratica 03", new Pratica03ItemAction()),
-                new MenuItem("5", "Pratica 04", new Pratica04ItemAction())
+                new MenuItem("4", "Pratica 03", new Pratica03ProdutoItemAction()),
+                new MenuItem("5", "Pratica 04", new Pratica04ConversorItemAction())
         );
     }
 }

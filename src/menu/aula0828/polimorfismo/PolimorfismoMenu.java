@@ -15,7 +15,7 @@ public class PolimorfismoMenu extends AbstractMenuBr {
     @Override
     protected List<MenuItem> loadMenuItems() {
         return List.of(
-                new MenuItem("1", "Exercício com Formas", new ExercicioFormasItemAction()),
+                new MenuItem("1", "Exercício com Formas", new ExercicioFormasPolimorfismoItemAction()),
                 new MenuItem("2", "Prática 03", new Pratica03PolimorfismoItemAction())
         );
     }

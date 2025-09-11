@@ -4,7 +4,7 @@ import aulas.aula0828.heranca.veiculo.VeiculoTest;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 
-public class ExercicioVeiculoItemAtion implements MenuItemAction {
+public class ExercicioVeiculoHerancaItemAction implements MenuItemAction {
 
     @Override
     public void execute(MenuEngine menuEngine) {

@@ -16,7 +16,7 @@ public class HerancaMenu extends AbstractMenuBr {
     protected List<MenuItem> loadMenuItems() {
         return List.of(
                 new MenuItem("1", "Exercício com Animal", new ExercicioAnimalItemAction()),
-                new MenuItem("2", "Exercício com Veículo", new ExercicioVeiculoItemAtion())
+                new MenuItem("2", "Exercício com Veículo", new ExercicioVeiculoHerancaItemAction())
         );
     }
 }

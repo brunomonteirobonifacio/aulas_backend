@@ -1,13 +1,13 @@
-package menu.aula0828.composicao;
+package menu.aula0814;
 
-import aulas.aula0828.composicao.pratica02.CarroTest;
+import aulas.aula0814.pratica4.ConversorTest;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 
-public class Pratica02ItemAction implements MenuItemAction {
+public class Pratica04ConversorItemAction implements MenuItemAction {
 
     @Override
     public void execute(MenuEngine menuEngine) {
-        CarroTest.main(null);
+        ConversorTest.main(null);
     }
 }
