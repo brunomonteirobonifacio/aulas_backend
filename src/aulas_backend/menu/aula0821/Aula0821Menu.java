@@ -9,7 +9,7 @@ public class Aula0821Menu extends AbstractMenuBr {
 
     @Override
     public String getMenuTitle() {
-        return "Aula 21/08";
+        return "Aula 21/08 - Instruções de Controle";
     }
 
     @Override
