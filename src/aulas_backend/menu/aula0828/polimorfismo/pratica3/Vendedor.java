@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.polimorfismo.pratica03;
+package aulas_backend.menu.aula0828.polimorfismo.pratica3;
 
 public class Vendedor extends Funcionario {
     public Vendedor(String nome, double salario) {

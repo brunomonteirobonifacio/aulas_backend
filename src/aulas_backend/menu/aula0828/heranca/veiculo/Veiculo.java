@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.heranca.veiculo;
+package aulas_backend.menu.aula0828.heranca.veiculo;
 
 public class Veiculo {
     protected String modelo;

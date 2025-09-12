@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.polimorfismo.pratica03;
+package aulas_backend.menu.aula0828.polimorfismo.pratica3;
 
 public class Gerente extends Funcionario {
     public Gerente(String nome, double salario) {

@@ -1,7 +1,12 @@
-package aulas_backend.aulas.aula0828.polimorfismo.pratica03;
+package aulas_backend.menu.aula0828.polimorfismo.pratica3;
 
-public class FuncionarioTest {
-    public static void main(String[] args) {
+import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
+import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
+
+public class Pratica03PolimorfismoItemAction implements MenuItemAction {
+
+    @Override
+    public void execute(MenuEngine menuEngine) {
         Funcionario funcionario = new Funcionario("Bruno", 2500);
         System.out.printf("Bonus do funcionario %s: %s\n", funcionario.getNome(), funcionario.calcularBonus());
 

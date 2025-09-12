@@ -1,13 +1,13 @@
-package aulas_backend.menu.aula0828.composicao;
+package aulas_backend.menu.aula0828.heranca.animal;
 
-import aulas_backend.aulas.aula0828.composicao.pratica02.CarroTest;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 
-public class Pratica02ComposicaoItemAction implements MenuItemAction {
+public class ExercicioAnimalItemAction implements MenuItemAction {
 
     @Override
     public void execute(MenuEngine menuEngine) {
-        CarroTest.main(null);
+        Gato gato = new Gato("Garfield");
+        gato.mostrarNome();
     }
 }

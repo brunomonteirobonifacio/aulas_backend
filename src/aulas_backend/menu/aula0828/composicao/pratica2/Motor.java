@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.composicao.pratica02;
+package aulas_backend.menu.aula0828.composicao.pratica2;
 
 public class Motor {
     private int potencia;

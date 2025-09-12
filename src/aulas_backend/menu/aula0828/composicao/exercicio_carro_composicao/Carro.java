@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.composicao;
+package aulas_backend.menu.aula0828.composicao.exercicio_carro_composicao;
 
 public class Carro {
     protected Motor motor;

@@ -1,5 +1,7 @@
 package aulas_backend.menu.aula0828.heranca;
 
+import aulas_backend.menu.aula0828.heranca.animal.ExercicioAnimalItemAction;
+import aulas_backend.menu.aula0828.heranca.veiculo.ExercicioVeiculoHerancaItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
 

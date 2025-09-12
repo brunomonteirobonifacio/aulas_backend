@@ -1,13 +1,13 @@
-package aulas_backend.menu.aula0828.polimorfismo;
+package aulas_backend.menu.aula0828.composicao.exercicio_carro_composicao;
 
-import aulas_backend.aulas.aula0828.polimorfismo.FormaTest;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 
-public class ExercicioFormasPolimorfismoItemAction implements MenuItemAction {
+public class ExercicioCarroComposicaoItemAction implements MenuItemAction {
 
     @Override
     public void execute(MenuEngine menuEngine) {
-        FormaTest.main(null);
+        Carro carro = new Carro();
+        carro.dirigir();
     }
 }

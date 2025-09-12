@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0828.heranca.animal;
+package aulas_backend.menu.aula0828.heranca.animal;
 
 public class Animal {
     protected String nome;
