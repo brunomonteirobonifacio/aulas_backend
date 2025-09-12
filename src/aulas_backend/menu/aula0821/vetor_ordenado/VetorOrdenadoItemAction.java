@@ -18,7 +18,7 @@ public class VetorOrdenadoItemAction implements MenuItemAction {
         testExcluir(vetorOrdenado);
     }
 
-    private static void testInserir(VetorOrdenado<Integer> vetorOrdenado) {
+    private void testInserir(VetorOrdenado<Integer> vetorOrdenado) {
         vetorOrdenado.inserir(2);
         vetorOrdenado.imprimir();
 
@@ -38,19 +38,19 @@ public class VetorOrdenadoItemAction implements MenuItemAction {
         vetorOrdenado.imprimir();
     }
 
-    private static void testPesquisaLinear(VetorOrdenado<Integer> vetorOrdenado) {
+    private void testPesquisaLinear(VetorOrdenado<Integer> vetorOrdenado) {
         System.out.println("Teste pesquisa linear para o valor 2: " + vetorOrdenado.pesquisaLinear(2));
         System.out.println("Teste pesquisa linear para o valor 7: " + vetorOrdenado.pesquisaLinear(7));
         System.out.println("Teste pesquisa linear para o valor 0: " + vetorOrdenado.pesquisaLinear(0));
     }
 
-    private static void testPesquisaBinaria(VetorOrdenado<Integer> vetorOrdenado) {
+    private void testPesquisaBinaria(VetorOrdenado<Integer> vetorOrdenado) {
         System.out.println("Teste pesquisa binária para o valor 2: " + vetorOrdenado.pesquisaBinaria(2));
         System.out.println("Teste pesquisa binária para o valor 7: " + vetorOrdenado.pesquisaBinaria(7));
         System.out.println("Teste pesquisa binária para o valor 0: " + vetorOrdenado.pesquisaBinaria(0));
     }
 
-    private static void testExcluir(VetorOrdenado<Integer> vetorOrdenado) {
+    private void testExcluir(VetorOrdenado<Integer> vetorOrdenado) {
         boolean exclusaoBemSucedida = vetorOrdenado.excluir(2);
         System.out.println("Exclusão deve ser bem sucedida: " + exclusaoBemSucedida);
         vetorOrdenado.imprimir();

@@ -18,7 +18,7 @@ public class ListaEncadeadaItemAction implements MenuItemAction {
         testExcluirPosicao(listaEncadeadaSimples);
     }
 
-    private static void testInserirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private void testInserirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.inserirInicio("B");
         listaEncadeadaSimples.inserirInicio("r");
         listaEncadeadaSimples.inserirInicio("u");
@@ -29,25 +29,25 @@ public class ListaEncadeadaItemAction implements MenuItemAction {
         listaEncadeadaSimples.mostrar();
     }
 
-    private static void testPesquisa(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private void testPesquisa(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         testPesquisaWithValor(listaEncadeadaSimples, "B");
         testPesquisaWithValor(listaEncadeadaSimples, "r");
         testPesquisaWithValor(listaEncadeadaSimples, "B");
         testPesquisaWithValor(listaEncadeadaSimples, "a");
     }
 
-    private static <T> void testPesquisaWithValor(ListaEncadeadaSimples<T> listaEncadeadaSimples, T valor) {
+    private <T> void testPesquisaWithValor(ListaEncadeadaSimples<T> listaEncadeadaSimples, T valor) {
         No<T> noEncontrado = listaEncadeadaSimples.pesquisa(valor);
         System.out.printf("No encontrado para pesquisa de '%s': %s (%s)\n"
                 .formatted(valor, noEncontrado != null ? noEncontrado : "Não encontrado", noEncontrado != null ? noEncontrado.getValor() : null));
     }
 
-    private static void testExcluirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private void testExcluirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.excluirInicio();
         listaEncadeadaSimples.mostrar();
     }
 
-    private static void testExcluirPosicao(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private void testExcluirPosicao(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.excluirPosicao("B");
         listaEncadeadaSimples.mostrar();
         System.out.println();
