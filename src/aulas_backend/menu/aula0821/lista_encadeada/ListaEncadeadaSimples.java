@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0821.lista_encadeada;
+package aulas_backend.menu.aula0821.lista_encadeada;
 
 public class ListaEncadeadaSimples<T> {
     private No<T> primeiro;

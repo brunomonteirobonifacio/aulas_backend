@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0821.vetor_ordenado;
+package aulas_backend.menu.aula0821.vetor_ordenado;
 
 public class VetorOrdenado<T extends Comparable<T>> {
     private int capacidade;

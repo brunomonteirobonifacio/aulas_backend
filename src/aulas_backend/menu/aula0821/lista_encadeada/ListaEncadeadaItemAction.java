@@ -1,7 +1,12 @@
-package aulas_backend.aulas.aula0821.lista_encadeada;
+package aulas_backend.menu.aula0821.lista_encadeada;
 
-public class ListaEncadeadaSimplesTest {
-    public static void main(String[] args) {
+import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
+import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
+
+public class ListaEncadeadaItemAction implements MenuItemAction {
+
+    @Override
+    public void execute(MenuEngine menuEngine) {
         ListaEncadeadaSimples<String> listaEncadeadaSimples = new ListaEncadeadaSimples<>();
 
         testInserirInicio(listaEncadeadaSimples);
@@ -13,7 +18,7 @@ public class ListaEncadeadaSimplesTest {
         testExcluirPosicao(listaEncadeadaSimples);
     }
 
-    public static void testInserirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private static void testInserirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.inserirInicio("B");
         listaEncadeadaSimples.inserirInicio("r");
         listaEncadeadaSimples.inserirInicio("u");
@@ -24,7 +29,7 @@ public class ListaEncadeadaSimplesTest {
         listaEncadeadaSimples.mostrar();
     }
 
-    public static void testPesquisa(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private static void testPesquisa(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         testPesquisaWithValor(listaEncadeadaSimples, "B");
         testPesquisaWithValor(listaEncadeadaSimples, "r");
         testPesquisaWithValor(listaEncadeadaSimples, "B");
@@ -37,12 +42,12 @@ public class ListaEncadeadaSimplesTest {
                 .formatted(valor, noEncontrado != null ? noEncontrado : "Não encontrado", noEncontrado != null ? noEncontrado.getValor() : null));
     }
 
-    public static void testExcluirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private static void testExcluirInicio(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.excluirInicio();
         listaEncadeadaSimples.mostrar();
     }
 
-    public static void testExcluirPosicao(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
+    private static void testExcluirPosicao(ListaEncadeadaSimples<String> listaEncadeadaSimples) {
         listaEncadeadaSimples.excluirPosicao("B");
         listaEncadeadaSimples.mostrar();
         System.out.println();
