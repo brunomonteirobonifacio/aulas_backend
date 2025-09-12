@@ -1,13 +1,13 @@
 package aulas_backend.menu.aula0807;
 
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
-import aulas_backend.menu.AbstractMenuBr;
 import aulas_backend.menu.aula0807.instanciando_classe.InstanciandoClasseItemAction;
 import aulas_backend.menu.aula0807.utilizando_scanner.UtilizandoScannerItemAction;
 
 import java.util.List;
 
-public class Aula0807Menu extends AbstractMenuBr {
+public class Aula0807Menu extends AbstractMenu {
 
     @Override
     public String getMenuTitle() {

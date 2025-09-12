@@ -1,8 +1,8 @@
-package aulas_backend.menu.mainmenu;
+package aulas_backend.menu;
 
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.OpenMenuAction;
-import aulas_backend.menu.AbstractMenuBr;
 import aulas_backend.menu.aula0807.Aula0807Menu;
 import aulas_backend.menu.aula0814.Aula0814Menu;
 import aulas_backend.menu.aula0821.Aula0821Menu;
@@ -11,7 +11,7 @@ import aulas_backend.menu.aula0904.Aula0904Menu;
 
 import java.util.List;
 
-public class MainMenu extends AbstractMenuBr {
+public class MainMenu extends AbstractMenu {
 
     @Override
     public String getMenuTitle() {

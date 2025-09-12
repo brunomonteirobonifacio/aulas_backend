@@ -1,11 +1,11 @@
 package aulas_backend.menu.aula0828.polimorfismo;
 
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
-import aulas_backend.menu.AbstractMenuBr;
 
 import java.util.List;
 
-public class PolimorfismoMenu extends AbstractMenuBr {
+public class PolimorfismoMenu extends AbstractMenu {
 
     @Override
     public String getMenuTitle() {

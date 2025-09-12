@@ -1,11 +1,11 @@
 package aulas_backend.menu.aula0904.collections;
 
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
-import aulas_backend.menu.AbstractMenuBr;
 
 import java.util.List;
 
-public class CollectionsMenu extends AbstractMenuBr {
+public class CollectionsMenu extends AbstractMenu {
 
     @Override
     public String getMenuTitle() {

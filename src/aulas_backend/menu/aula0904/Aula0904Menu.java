@@ -1,15 +1,15 @@
 package aulas_backend.menu.aula0904;
 
+import aulas_backend.menu.aula0904.interfaces.InterfaceMenu;
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
 import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.OpenMenuAction;
-import aulas_backend.menu.AbstractMenuBr;
 import aulas_backend.menu.aula0904.classe_abstrata.ClasseAbstrataMenu;
 import aulas_backend.menu.aula0904.collections.CollectionsMenu;
-import aulas_backend.menu.aula0904.interfaces.ExercicioVeiculoInterfaceItemAction;
 
 import java.util.List;
 
-public class Aula0904Menu extends AbstractMenuBr {
+public class Aula0904Menu extends AbstractMenu {
 
     @Override
     public String getMenuTitle() {
@@ -20,7 +20,7 @@ public class Aula0904Menu extends AbstractMenuBr {
     protected List<MenuItem> loadMenuItems() {
         return List.of(
                 new MenuItem("1", "Classes Abstratas", new OpenMenuAction(new ClasseAbstrataMenu())),
-                new MenuItem("2", "Interface", new ExercicioVeiculoInterfaceItemAction()),
+                new MenuItem("2", "Interface", new OpenMenuAction(new InterfaceMenu())),
                 new MenuItem("3", "Collections API", new OpenMenuAction(new CollectionsMenu()))
         );
     }
