@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0814.getters_setters;
+package aulas_backend.menu.aula0814.getters_setters;
 
 public class ContaCorrente {
     private String titular;

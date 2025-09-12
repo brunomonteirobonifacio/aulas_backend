@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0814.gradebook;
+package aulas_backend.menu.aula0814.gradebook;
 
 public class GradeBook {
     public void showMessage(String courseName) {

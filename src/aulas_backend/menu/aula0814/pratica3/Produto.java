@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0814.pratica3;
+package aulas_backend.menu.aula0814.pratica3;
 
 public class Produto {
     private String nome;

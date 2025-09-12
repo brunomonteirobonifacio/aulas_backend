@@ -1,6 +1,5 @@
-package aulas_backend.menu.aula0814;
+package aulas_backend.menu.aula0814.gradebook;
 
-import aulas_backend.aulas.aula0814.gradebook.GradeBook;
 import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
 import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
 

@@ -1,7 +1,12 @@
-package aulas_backend.aulas.aula0814.pratica4;
+package aulas_backend.menu.aula0814.pratica4;
 
-public class ConversorTest {
-    public static void main(String[] args) {
+import io.github.brunomonteirobonifacio.simplemenu.menu.action.MenuItemAction;
+import io.github.brunomonteirobonifacio.simplemenu.menu.engine.MenuEngine;
+
+public class Pratica04ConversorItemAction implements MenuItemAction {
+
+    @Override
+    public void execute(MenuEngine menuEngine) {
         Conversor conversor = new Conversor();
 
         double celsius = 20;

@@ -1,4 +1,4 @@
-package aulas_backend.aulas.aula0814.pratica4;
+package aulas_backend.menu.aula0814.pratica4;
 
 public class Conversor {
     public double converter(double celsius) {
