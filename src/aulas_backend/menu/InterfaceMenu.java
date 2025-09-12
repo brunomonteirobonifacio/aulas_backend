@@ -1,0 +1,24 @@
+package aulas_backend.menu;
+
+import aulas_backend.aula0904.interfaces.exercicio_veiculo.ExercicioVeiculoInterfaceItemAction;
+import aulas_backend.aula0904.interfaces.pratica2.Pratica02InterfaceItemAction;
+import io.github.brunomonteirobonifacio.simplemenu.menu.AbstractMenu;
+import io.github.brunomonteirobonifacio.simplemenu.menu.MenuItem;
+
+import java.util.List;
+
+public class InterfaceMenu extends AbstractMenu {
+
+    @Override
+    public String getMenuTitle() {
+        return "Interfaces";
+    }
+
+    @Override
+    protected List<MenuItem> loadMenuItems() {
+        return List.of(
+                new MenuItem("1", "Exercício com Veículo", new ExercicioVeiculoInterfaceItemAction()),
+                new MenuItem("2", "Prática 02", new Pratica02InterfaceItemAction())
+        );
+    }
+}
